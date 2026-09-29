@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizika Battle — 8-D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game">
+
+    <header>
+        <div>
+            <p class="mini">8-D SINF • FIZIKA BELLASHUVI</p>
+            <h1>⚡ FIZIKA BATTLE ⚡</h1>
+            <p>Bahodirov Jahongir tomonidan tayyorlangan</p>
+        </div>
+
+        <div class="timer">
+            <span>VAQT</span>
+            <b id="time">60</b>
+            <small>soniya</small>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- 1-KOMANDA -->
+
+        <section class="team blue">
+
+            <div class="team-top">
+                <h2>🔵 1-KOMANDA</h2>
+                <div class="score">
+                    <span id="score1">0</span> ball
+                </div>
+            </div>
+
+            <div class="progress">
+                <div id="progress1"></div>
+            </div>
+
+            <div class="question-box">
+
+                <p id="number1">1 / 10</p>
+
+                <h3 id="question1">
+                    Savol yuklanmoqda...
+                </h3>
+
+                <div id="answers1" class="answers"></div>
+
+                <p id="result1" class="result"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- MARKAZ -->
+
+        <div class="center">
+            <div class="vs">VS</div>
+            <div class="line"></div>
+            <div class="physics">⚛️</div>
+        </div>
+
+
+        <!-- 2-KOMANDA -->
+
+        <section class="team red">
+
+            <div class="team-top">
+                <h2>🔴 2-KOMANDA</h2>
+
+                <div class="score">
+                    <span id="score2">0</span> ball
+                </div>
+            </div>
+
+            <div class="progress">
+                <div id="progress2"></div>
+            </div>
+
+            <div class="question-box">
+
+                <p id="number2">1 / 10</p>
+
+                <h3 id="question2">
+                    Savol yuklanmoqda...
+                </h3>
+
+                <div id="answers2" class="answers"></div>
+
+                <p id="result2" class="result"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            📚 Agregat holatlar • Kinetik model • Broun harakati •
+            Gaz qonunlari • Temperatura • Issiqlikdan kengayish
+        </p>
+
+        <button onclick="restartGame()">
+            🔄 Qayta boshlash
+        </button>
+    </footer>
+
+</div>
+
+
+<!-- NATIJA OYNASI -->
+
+<div id="modal" class="modal hidden">
+
+    <div class="result-box">
+
+        <div class="trophy">🏆</div>
+
+        <h2>Bellashuv tugadi!</h2>
+
+        <p id="winner"></p>
+
+        <div class="final-score">
+
+            <div>
+                🔵 1-KOMANDA
+                <b id="final1">0</b>
+            </div>
+
+            <div>
+                🔴 2-KOMANDA
+                <b id="final2">0</b>
+            </div>
+        </div>
+
+        <button onclick="restartGame()">
+            Yana o‘ynash
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
